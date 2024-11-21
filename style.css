@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    /* Light gray background to make the game stand out */
+}
+
+.titleColor {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 4px solid #000;
+    /* Thin black line under the title */
+    padding-bottom: 10px;
+    /* Space between the text and the line */
+    width: 100%;
+    max-width: 500px;
+    /* Limit the line width */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+}
+
+.grid-item {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background-color: #d3d3d3;
+    border: 1px solid #888;
+    text-align: center;
+    font-size: 1.7em;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
